@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-option {
+            margin-bottom: 20px;
+        }
+
+        .admin-option a {
+            display: block;
+            padding: 10px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .admin-option a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Add Services</a>
+        <a href="#">View Unregistered Workers</a>
+        <a href="#">View Registered Workers</a>
+    </nav>
+
+    <div class="container">
+        <div class="admin-option">
+            <a href="#">Add Services</a>
+        </div>
+        <div class="admin-option">
+            <a href="#">View Unregistered Workers</a>
+        </div>
+        <div class="admin-option">
+            <a href="#">View Registered Workers</a>
+        </div>
+    </div>
+</body>
+
+</html>

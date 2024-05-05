@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Cards Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Blogs</h1>
+        <nav>
+            <a href="/create"> Add blog</a>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Card Title 1</h2>
+            <h3>Subtitle 1</h3>
+            <p>Description for card 1.</p>
+        </div>
+        <div class="card">
+            <h2>Card Title 2</h2>
+            <h3>Subtitle 2</h3>
+            <p>Description for card 2.</p>
+        </div>
+        <div class="card">
+            <h2>Card Title 3</h2>
+            <h3>Subtitle 3</h3>
+            <p>Description for card 3.</p>
+        </div>
+    </div>
+</body>
+
+</html>
