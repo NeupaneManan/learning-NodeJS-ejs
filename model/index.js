@@ -1,6 +1,9 @@
 const dbConfig = require("../config/dbCofig.js");
 const { Sequelize, DataTypes } = require("sequelize");
 
+
+/*Sequalize laii database ko information provide gareko jun 
+chai hamro config folder ko dbConfig vanne file ma xaa*/
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
@@ -13,6 +16,8 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   },
 });
 
+
+//Error handeling Gareko 
 sequelize
   .authenticate()
   .then(() => {
@@ -24,8 +29,8 @@ sequelize
 
 const db = {};
 
-db.Sequelize = Sequelize;
-db.sequelize = sequelize;
+db.Sequelize = Sequelize;//mathi top ma require gareko Sequelize ( notice Big S)
+db.sequelize = sequelize;//config garda declare gareko sequelize ( notice Small s)
 
 //importing model files
 db.blogs = require("./blogmodel.js")(sequelize, DataTypes);
